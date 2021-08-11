@@ -1,0 +1,336 @@
+html {
+        position: relative;
+        min-height: 100%;
+}
+
+body {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        max-width: 1080px;
+        margin: auto;
+        border: 0px solid #000;
+        background-color: #081c15;
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: linear-gradient(rgba(1,50,32,1), #202843);
+}
+
+footer {
+        position: relative;
+        text-align: right;
+        color: #fffaec;
+}
+
+/* Navigation bar */
+
+.navbar {
+        background-color: #43291f;
+        border: 1px solid #fffaec;
+        border-radius: 2px;
+        box-shadow: 0px 8px 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.top-level-navbar {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+}
+
+.top-level-navbar > li {
+        position: relative;
+        float: left;
+        height: 30px;
+        width: 150px;
+        background: #43291f;
+}
+
+.top-level-navbar > li:hover {
+        background: #a68a64;
+}
+
+.top-level-navbar li:hover > ul {
+        display: inline;
+}
+
+.top-level-navbar a /* Apply to all links inside the multi-level menu */{
+    font: Arial, Helvetica, sans-serif;
+    color: #fffaec;
+    text-decoration: none;
+    padding: 0 0 0 10px;
+    
+    /* Make the link cover the entire list item-container */
+    display: block;
+    line-height: 30px;
+}
+
+.top-level-navbar a:hover { 
+        color: #000000; 
+}
+
+.second-level-navbar {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    border: 1px solid #fffaec;
+    border-radius: 2px;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.second-level-navbar > li {
+    position: relative;
+    height: 30px;
+    background: #43291f;
+}
+.second-level-navbar > li:hover { 
+        background: #a68a64; 
+}
+
+.third-level-navbar {
+    position: absolute;
+    top: -1px;
+    right: -152px;
+    width: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    border: 1px solid #fffaec;
+    border-radius: 2px;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.third-level-navbar > li {
+    height: 30px;
+    background: #43291f;
+}
+
+.third-level-navbar > li:hover { 
+        background: #a68a64; 
+}
+
+
+.navigationbar {
+        clear: right;
+        overflow: hidden;
+        border: 1px solid #fffaec;
+        border-radius: 2px;
+        box-shadow: 0px 8px 8px 8px rgba(0, 0, 0, 0.2);
+        background-color: #43291f;
+}
+
+.navigationbar a {
+        float: left;
+        font-size: 16px;
+        color: #fffaec;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+}
+
+.dropdown {
+        float: left;
+        overflow: hidden;
+}
+
+.dropdownsecond {
+        float: left;
+        overflow: hidden;
+}
+
+.dropdown .dropbutton {
+        font-size: 16px;  
+        border: none;
+        outline: none;
+        color: #fffaec;
+        padding: 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+}
+
+.navigationbar a:hover, .dropdown:hover .dropbutton {
+        background-color: #a68a64;
+}
+
+.dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #43291f;
+        border: 1px solid #fffaec;
+        border-radius: 2px;
+        min-width: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+}
+
+.dropdown-content a {
+        float: none;
+        color: #fffaec;
+        padding: 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+}
+
+.dropdownsecond-content a {
+        float: none;
+        color: #fffaec;
+        padding: 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+}
+
+.dropdown-content a:hover {
+        background-color: #a68a64;
+        border-radius: 2px;
+}
+
+.dropdownsecond-content a:hover {
+        background-color: #a68a64;
+        border-radius: 2px;
+}
+
+.dropdown:hover .dropdown-content {
+        display: block;
+}
+
+.content-box {
+        margin-top: 32px;
+        background-color: #ffffff;
+        border: 1px solid #43291f;
+        border-radius: 2px;
+        box-shadow: 0px 8px 8px 8px rgba(0, 0, 0, 0.2);
+        background-image: linear-gradient(#fffaec, #ffffff);
+}
+
+.home {
+        margin: 32px;
+        padding: 8px;
+        text-align: justify;
+        text-justify: inter-word;
+        color: #002919;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: 1px solid #43291f;
+        border-radius: 5px;
+        line-height: 24px;
+}
+
+.catalogue {
+        margin-left: 32px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+        color: #002919;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 24px;
+}
+
+.contact {
+        margin: 32px;
+        padding: 8px;
+        text-align: justify;
+        text-justify: inter-word;
+        color: #002919;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: 0px solid #43291f;
+        border-radius: 4px;
+        line-height: 24px;
+}
+
+.map {
+        position: relative;
+        display: flex;
+        border: 0px solid #000;
+        padding-bottom: 32px;
+}
+
+.content {
+        margin: 32px;
+        padding: 8px;
+        text-align: justify;
+        text-justify: inter-word;
+        color: #002919;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: 0px solid #43291f;
+        border-radius: 5px;
+        line-height: 24px;
+}
+
+.list {
+        margin-left: 40px;
+        list-style: square;
+        color: #43291f;
+}
+
+.paragraphtab {
+        margin-left: 8px;
+}
+
+.sitenav {
+        border: 1px solid #43291f;
+        border-radius: 3px;
+        box-shadow: 1px 2px 0px 0px #43291f;
+        padding-left: 8px;
+        font-size: 12px;
+        background-image: linear-gradient(to left,#dde5b6, #fffaec)
+}
+
+.row {
+        display: flex;
+        color: #43291f;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.column1 {
+        flex: auto;
+        max-width: 320px;
+        border: 0px solid #43291f;
+        border-radius: 5px;
+}
+
+.column2 {
+        flex: auto;
+        padding-top: 8px;
+        border: 0px solid #43291f;
+        border-radius: 5px;
+}
+
+.thinhr {
+        border: 0;
+        height: 0;;
+        border-top: 1px solid #43291f;
+}
+
+.image {
+        text-align: left;
+        border: 1px solid #43291f;
+        box-shadow: 1px 2px 0px 0px #43291f;
+        margin-left: 1px;
+}
+
+#logo {
+        float: right;
+        margin-top: 8px;
+        margin-bottom: 8px;
+}
+
+h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
+        color: #002919;
+        font-size: 4ch;
+        margin-left: 16px;
+}
+
+h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
+        color: #002919;
+        font-size: 3ch;
+        margin-left: 32px;
+}
