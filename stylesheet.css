@@ -52,13 +52,11 @@ footer {
         display: inline;
 }
 
-.top-level-navbar a /* Apply to all links inside the multi-level menu */{
+.top-level-navbar a {
     font: Arial, Helvetica, sans-serif;
     color: #fffaec;
     text-decoration: none;
     padding: 0 0 0 10px;
-    
-    /* Make the link cover the entire list item-container */
     display: block;
     line-height: 30px;
 }
@@ -303,7 +301,7 @@ footer {
 .thinhr {
         border: 0;
         height: 0;;
-        border-top: 1px solid #43291f;
+        border-top: 1px solid #a68a64;
 }
 
 .image {
@@ -311,6 +309,13 @@ footer {
         border: 1px solid #43291f;
         box-shadow: 1px 2px 0px 0px #43291f;
         margin-left: 1px;
+}
+
+.imagehome {
+        float: left;
+        border: 1px solid #43291f;
+        box-shadow: 1px 2px 0px 0px #43291f;
+        margin: 2px 16px 16px 16px;
 }
 
 #logo {
