@@ -21,8 +21,6 @@ footer {
         color: #fffaec;
 }
 
-/* Navigation bar */
-
 .navbar {
         background-color: #43291f;
         border: 1px solid #fffaec;
@@ -42,6 +40,7 @@ footer {
         height: 30px;
         width: 150px;
         background: #43291f;
+        text-align: left;
 }
 
 .top-level-navbar > li:hover {
@@ -69,7 +68,7 @@ footer {
     position: absolute;
     top: 30px;
     left: 0;
-    width: 150px;
+    width: 149px;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -91,7 +90,7 @@ footer {
 .third-level-navbar {
     position: absolute;
     top: -1px;
-    right: -300px;
+    right: -302px;
     width: 300px;
     list-style: none;
     padding: 0;
@@ -200,6 +199,10 @@ footer {
 
 .content-box {
         margin-top: 32px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 32px;
+        padding-right: 16px;
         background-color: #ffffff;
         border: 1px solid #43291f;
         border-radius: 2px;
@@ -216,15 +219,6 @@ footer {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         border: 0px solid #43291f;
         border-radius: 5px;
-        line-height: 24px;
-}
-
-.catalogue {
-        margin-left: 32px;
-        margin-top: 32px;
-        margin-bottom: 32px;
-        color: #002919;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         line-height: 24px;
 }
 
@@ -248,14 +242,12 @@ footer {
 }
 
 .content {
-        margin: 32px;
-        padding: 8px;
         text-align: justify;
         text-justify: inter-word;
         color: #002919;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         border: 0px solid #43291f;
-        border-radius: 5px;
+        border-radius: 2px;
         line-height: 24px;
 }
 
@@ -311,11 +303,14 @@ footer {
         margin-left: 1px;
 }
 
-.imagehome {
+.imagehomeleft {
         float: left;
         border: 1px solid #43291f;
         box-shadow: 1px 2px 0px 0px #43291f;
-        margin: 2px 16px 16px 16px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 16px;
 }
 
 #logo {
@@ -329,7 +324,6 @@ h1 {
         text-align: left;
         color: #002919;
         font-size: 4ch;
-        margin-left: 16px;
 }
 
 h2 {
@@ -337,5 +331,4 @@ h2 {
         text-align: left;
         color: #002919;
         font-size: 3ch;
-        margin-left: 32px;
 }
