@@ -29,6 +29,8 @@ footer {
         border-radius: 2px;
         box-shadow: 0px 0px 32px 8px #081c15;
         font-family: 'Montserrat', sans-serif;
+        font-weight: 400px;
+        font-size: 18pt;
 }
 
 .top-level-navbar {
@@ -41,7 +43,7 @@ footer {
 .top-level-navbar > li {
         position: relative;
         float: left;
-        height: 35px;
+        height: 50px;
         width: 150px;
         background: #081c15;
         text-align: left;
@@ -59,7 +61,7 @@ footer {
     font: Arial, Helvetica, sans-serif;
     color: #fffaec;
     text-decoration: none;
-    padding: 2px 8px;
+    padding: 8px 8px;
     display: block;
     line-height: 30px;
 }
@@ -70,7 +72,7 @@ footer {
 
 .second-level-navbar {
     position: absolute;
-    top: 35px;
+    top: 50px;
     left: 0;
     width: 150px;
     list-style: none;
@@ -80,11 +82,12 @@ footer {
     border: 0px solid #fffaec;
     border-radius: 2px;
     box-shadow: 0px 0px 32px 8px #081c15;
+    font-size: 12pt;
 }
 
 .second-level-navbar > li {
     position: relative;
-    height: 35px;
+    height: 50px;
     background: #081c15;
 }
 .second-level-navbar > li:hover { 
@@ -94,8 +97,8 @@ footer {
 .third-level-navbar {
     position: absolute;
     top: 0px;
-    right: -350px;
-    width: 350px;
+    right: -400px;
+    width: 400px;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -106,7 +109,7 @@ footer {
 }
 
 .third-level-navbar > li {
-    height: 35px;
+    height: 50px;
     background: #081c15;
 }
 
