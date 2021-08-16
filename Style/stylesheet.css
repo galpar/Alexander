@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
+
 html {
         position: relative;
         min-height: 100%;
@@ -26,6 +28,7 @@ footer {
         border: 1px solid #fffaec;
         border-radius: 2px;
         box-shadow: 0px 8px 8px 8px rgba(0, 0, 0, 0.2);
+        font-family: 'Montserrat', sans-serif;
 }
 
 .top-level-navbar {
@@ -267,7 +270,8 @@ footer {
         box-shadow: 1px 2px 0px 0px #43291f;
         padding-left: 8px;
         font-size: 12px;
-        background-image: linear-gradient(to left,#dde5b6, #fffaec)
+        background-image: linear-gradient(to left,#dde5b6, #fffaec);
+        font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
 .row {
@@ -320,14 +324,14 @@ footer {
 }
 
 h1 {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Open Sans', sans-serif;
         text-align: left;
         color: #081c15;
         font-size: 4ch;
 }
 
 h2 {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Open Sans', sans-serif;
         text-align: left;
         color: #081c15;
         font-size: 3ch;
