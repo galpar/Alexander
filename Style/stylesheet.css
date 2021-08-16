@@ -272,11 +272,12 @@ footer {
         border: 1px solid #43291f;
         border-radius: 3px;
         box-shadow: 1px 2px 0px 0px #43291f;
-        padding-left: 8px;
+        padding-left: 0px;
         font-size: 12px;
+        text-align: center;
         color: #fffaec;
-        background-color: #fffaec;
-        background-image: linear-gradient(to right,#2d6a4f, #fffaec);
+        background-color: #2d6a4f;
+        background-image: radial-gradient(circle, #2d6a4f 75%, #fffaec 100%);
         font-family: 'Montserrat', sans-serif;
 }
 
