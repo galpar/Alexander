@@ -1,3 +1,2 @@
 # Alexander
-Website for my family's enterprise.
-This is my journey of learning HTML5, CSS, Javascript and Git.
+This is my first project and it's a website made for my family's enterprise.
