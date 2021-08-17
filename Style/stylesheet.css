@@ -27,7 +27,7 @@ footer {
         background-color: #081c15;
         border: 0px solid #081c15;
         border-radius: 2px;
-        box-shadow: 0px 0px 32px 8px #081c15;
+        box-shadow: 2px 4px 16px 2px #081c15;
         font-family: 'Montserrat', sans-serif;
         font-weight: 400px;
         font-size: 18pt;
@@ -81,7 +81,7 @@ footer {
     display: none;
     border: 0px solid #fffaec;
     border-radius: 2px;
-    box-shadow: 0px 0px 32px 8px #081c15;
+    box-shadow: 2px 4px 16px 2px #081c15;
     font-size: 12pt;
 }
 
@@ -105,7 +105,7 @@ footer {
     display: none;
     border: 0px solid #fffaec;
     border-radius: 2px;
-    box-shadow: 0px 0px 32px 8px #081c15;
+    box-shadow: 2px 4px 16px 2px #081c15;
 }
 
 .third-level-navbar > li {
@@ -213,7 +213,7 @@ footer {
         background-color: #ffffff;
         border: 1px solid #081c15;
         border-radius: 2px;
-        box-shadow: 0px 0px 32px 8px #081c15;
+        box-shadow: 2px 4px 16px 2px #081c15;
         background-image: linear-gradient(#fffaec, #ffffff);
 }
 
