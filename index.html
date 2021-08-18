@@ -6,12 +6,10 @@
                 <title>Pagină principală - Producție și Prestări Alexander S.R.L.</title>
                 <link rel="stylesheet" type="text/css" href="./Style/stylesheet.css" media="screen">
                 <style>
-                        * {
-                                box-sizing: border-box
-                        }
-
                         .mySlides {
-                                display: none
+                                display: none;
+                                position: relative;
+                                z-index: 0;
                         }
 
                         img {
@@ -25,7 +23,6 @@
                                 box-shadow: 2px 4px 16px 2px #081c15;
                         }
 
-                        /* Next & previous buttons */
                         .prev,
                         .next {
                                 cursor: pointer;
@@ -41,17 +38,17 @@
                                 border-radius: 0 3px 3px 0;
                                 user-select: none;
                         }
-                        /* Position the "next button" to the right */
+
                         .next {
                                 right: 0;
                                 border-radius: 3px 0 0 3px;
                         }
-                        /* On hover, add a black background color with a little bit see-through */
+
                         .prev:hover,
                         .next:hover {
                                 background-color: #081c15;
                         }
-                        /* Caption text */
+                        
                         .text {
                                 color: #fffaec;
                                 font-size: 15px;
@@ -61,7 +58,7 @@
                                 width: 100%;
                                 text-align: center;
                         }
-                        /* Number text (1/3 etc) */
+                        
                         .numbertext {
                                 color: #fffaec;
                                 font-size: 12px;
@@ -69,7 +66,7 @@
                                 position: absolute;
                                 top: 0;
                         }
-                        /* The dots/bullets/indicators */
+                        
                         .dot {
                                 cursor: pointer;
                                 height: 15px;
@@ -80,17 +77,19 @@
                                 display: inline-block;
                                 transition: background-color 0.6s ease;
                         }
+
                         .active,
                         .dot:hover {
                                 background-color: #081c15;
                         }
-                        /* Fading animation */
+                        
                         .fade {
                                 -webkit-animation-name: fade;
                                 -webkit-animation-duration: 1.5s;
                                 animation-name: fade;
                                 animation-duration: 1.5s;
                         }
+
                         @-webkit-keyframes fade {
                           from {
                                 opacity: .4
@@ -99,6 +98,7 @@
                                 opacity: 1
                           }
                         }
+
                         @keyframes fade {
                           from {
                                 opacity: .4
@@ -107,7 +107,7 @@
                                 opacity: 1
                           }
                         }
-                        /* On smaller screens, decrease text size */
+                        
                         @media only screen and (max-width: 300px) {
                                 .prev,
                                 .next,
@@ -141,6 +141,11 @@
                                                                 <li><a href="./Produse/Rotunde/lemnrotundpentruconstructii.html">Lemn pentru construcții și amenajări exterioare</a></li>
                                                         </ul>
                                                 </li>
+                                                <li><a href="#">Materiale</a>
+                                                        <ul class="third-level-navbar">
+                                                                <li><a href="./Materiale/salcam.html">Salcâm</a></li>
+                                                        </ul>
+                                                </li>
                                         </ul>
                                 </li>
                                 <li><a href="./catalogue.html">Catalog</a></li>
@@ -149,113 +154,79 @@
                 </div>
                 
                 <div class="content-box">
-
-                        <article>
-                                <div class="content">
-                                        <h1>Despre firmă</h1>
-                                        <p style="margin-left:24px">...</p>
-                                </div>
-                        </article>
-                        <hr class="thinhr">
-                        <h1>Galerie cu produse:</h1>
-                        <div class="slideshow-container">
-                                <div class="mySlides fade">
-                                        <div class="numbertext">1 / 3</div>
-                                        <img src="./images/salcam-lipit1.jpg" style="width:600px">
-                                        <div class="text">Salcâm lipit</div>
-                                </div>
-
-                                <div class="mySlides fade">
-                                        <div class="numbertext">2 / 3</div>
-                                        <img src="./images/salcam-lipit2.jpg" style="width:600px">
-                                        <div class="text">Salcâm lipit</div>
-                                </div>
-
-                                <div class="mySlides fade">
-                                        <div class="numbertext">3 / 3</div>
-                                        <img src="./images/salcam-lipit3.jpg" style="width:600px">
-                                        <div class="text">Salcâm lipit</div>
-                                </div>
-
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                        </div>
-                        <br>
-                        <div style="text-align: left; padding-left: 268px;">
-                                <span class="dot" onclick="currentSlide(1)"></span>
-                                <span class="dot" onclick="currentSlide(2)"></span>
-                                <span class="dot" onclick="currentSlide(3)"></span>
-                        </div>
-
-                        <script>
-                                var slideIndex = 1;
-                                showSlides(slideIndex);
-                                function plusSlides(n) {
-                                        showSlides(slideIndex += n);
-                                }
-                                function currentSlide(n) {
-                                        showSlides(slideIndex = n);
-                                }
-                                function showSlides(n) {
-                                        var i;
-                                        var slides = document.getElementsByClassName("mySlides");
-                                        var dots = document.getElementsByClassName("dot");
-                                        if(n > slides.length) {
-                                        slideIndex = 1
-                                        }
-                                        if(n < 1) {
-                                        slideIndex = slides.length
-                                        }
-                                        for(i = 0; i < slides.length; i++) {
-                                        slides[i].style.display = "none";
-                                        }
-                                        for(i = 0; i < dots.length; i++) {
-                                        dots[i].className = dots[i].className.replace(" active", "");
-                                        }
-                                        slides[slideIndex - 1].style.display = "block";
-                                        dots[slideIndex - 1].className += " active";
-                                }
-                        </script>
-
-                        <div class="content">
-                                <br>
-                                <hr class="thinhr">
-                                <h1>Materiale lemnoase folosit de firma noastră:</h1>
-                                <br>
-                        </div>
-
-                        <article>
-                                <div class="content">
-                                        <a href="./images/salcam-home.jpg" target="_blank"><img src="./images/salcam-home-thumbnail.jpg" alt="Salcâm" class="imagehomeleft" width="225" height="454"></a>
-                                        <h2>Salcâmul:</h2>
-                                        <p>Salcâmul face parte din familia Fabacae, este un arbore melifer, cu tulpină înaltă și ramuri spinoase rare.</p>
-                                        <p>Fiind aclimatizat în America de Nord, Europa, Africa de Sud și Asia.</p>
-                                        <h2>Istoric</h2>
-                                        <p>Salcâmul provine de pe conintentul nord-american. Genul Robinia este numit după grădinarii regali francezi Jean Robin, care a introdus salcâmul în Europa în anul 1601.</p>
-                                        <h2>Proprietăți</h2>
-                                        <p>Salcâmul crește pe aproape orice tip de teren.</p>
-                                        <p>Are o rezistență bună la ger, iubește lumina, suportă seceta.</p>
-                                        <p>Are capacitatea de a fixa azotul din atmosferă, iar semințele își păstrează mulți ani capacitatea de germinare.</p>
-                                        <p>Are frunze compuse și flori albe, puternic mirositoare, iar fructele sunt brun roșcate.</p>
-                                        <p>Înflorește primăvara târziu, în luna mai-iunie.</p>
-                                        <p>Salcâmul trăiește în jur de 100 de ani și face parte din categoria arborilor cu lemn de esență tare, fiind greu, dur și deosebit de rezistent la umezeală.</p>
-                                        <p>Lemnul de salcâm este utilizat pentru diverse lucrări în aer liber și interior.</p>
-                                        <br>
-                                </div>
-                        </article>
                         <hr class="thinhr">
                         <article>
-                                <div class="content">
-                                        <h2>Stejarul:</h2>
-                                        <p>Stejarul ...</p>
+                                <h2>Galerie cu produse:</h1>
+                                <div class="slideshow-container">
+                                        <div class="mySlides fade">
+                                                <div class="numbertext">1 / 3</div>
+                                                <img src="./images/salcam-lipit1.jpg" style="width:600px">
+                                                <div class="text">Salcâm lipit</div>
+                                        </div>
+
+                                        <div class="mySlides fade">
+                                                <div class="numbertext">2 / 3</div>
+                                                <img src="./images/salcam-lipit2.jpg" style="width:600px">
+                                                <div class="text">Salcâm lipit</div>
+                                        </div>
+
+                                        <div class="mySlides fade">
+                                                <div class="numbertext">3 / 3</div>
+                                                <img src="./images/salcam-lipit3.jpg" style="width:600px">
+                                                <div class="text">Salcâm lipit</div>
+                                        </div>
+
+                                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
                                 </div>
+                                <br>
+                                <div style="text-align: left; padding-left: 268px;">
+                                        <span class="dot" onclick="currentSlide(1)"></span>
+                                        <span class="dot" onclick="currentSlide(2)"></span>
+                                        <span class="dot" onclick="currentSlide(3)"></span>
+                                </div>
+
+                                <script>
+                                        var slideIndex = 1;
+                                        showSlides(slideIndex);
+                                        function plusSlides(n) {
+                                                showSlides(slideIndex += n);
+                                        }
+                                        function currentSlide(n) {
+                                                showSlides(slideIndex = n);
+                                        }
+                                        function showSlides(n) {
+                                                var i;
+                                                var slides = document.getElementsByClassName("mySlides");
+                                                var dots = document.getElementsByClassName("dot");
+                                                
+                                                if (n > slides.length) {
+                                                slideIndex = 1
+                                                }
+
+                                                if (n < 1) {
+                                                slideIndex = slides.length
+                                                }
+
+                                                for (i = 0; i < slides.length; i++) {
+                                                slides[i].style.display = "none";
+                                                }
+
+                                                for (i = 0; i < dots.length; i++) {
+                                                dots[i].className = dots[i].className.replace(" active", "");
+                                                }
+
+                                                slides[slideIndex - 1].style.display = "block";
+                                                dots[slideIndex - 1].className += " active";
+                                        }
+                                </script>
                         </article>
                         <hr class="thinhr">
                 </div>
 
                 <footer>
-                        <p><small>Copyright &copy; 2021 goliczaa</small></p>
+                        <p><small>Copyright &copy; 2021 galpar</small></p>
                 </footer>
         </body>
 </html>
