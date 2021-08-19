@@ -1,2 +1,2 @@
 # Alexander
-This is my first project and it's a website made for my family's enterprise.
+A website to show off the products of an enterprise based in Terra Siculorum.
