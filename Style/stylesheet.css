@@ -59,7 +59,6 @@ footer {
 }
 
 .top-level-navbar a {
-    font: Arial, Helvetica, sans-serif;
     color: #fffaec;
     text-decoration: none;
     padding: 8px 8px;
@@ -224,7 +223,7 @@ footer {
         text-align: justify;
         text-justify: inter-word;
         color: #081c15;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Open Sans', sans-serif;
         border: 0px solid #43291f;
         border-radius: 5px;
         line-height: 24px;
@@ -236,7 +235,7 @@ footer {
         text-align: justify;
         text-justify: inter-word;
         color: #081c15;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Open Sans', sans-serif;
         border: 0px solid #43291f;
         border-radius: 4px;
         line-height: 24px;
@@ -253,7 +252,7 @@ footer {
         text-align: justify;
         text-justify: inter-word;
         color: #081c15;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Open Sans', sans-serif;
         border: 0px solid #43291f;
         border-radius: 2px;
         line-height: 24px;
@@ -347,14 +346,15 @@ footer {
 }
 
 h1 {
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         text-align: left;
         color: #081c15;
         font-size: 4ch;
 }
 
 h2 {
-        font-family: 'Open Sans', sans-serif;
+        /*font-family: 'Open Sans', sans-serif;*/
+        font-family: 'Montserrat', sans-serif;
         text-align: left;
         color: #081c15;
         font-size: 3ch;
@@ -409,6 +409,7 @@ img {
 
 .text {
         background-color: #2d6a4f95;
+        border-radius: 4px;
         color: #fffaec;
         font-size: 15px;
         padding: 8px 12px;
@@ -416,6 +417,7 @@ img {
         bottom: 8px;
         width: auto;
         text-align: center;
+        font-family: 'Montserrat', sans-serif;
 }
 
 .numbertext {
@@ -451,7 +453,7 @@ img {
 
 @-webkit-keyframes fade {
   from {
-        opacity: .4
+        opacity: .5
   }
   to {
         opacity: 1
@@ -460,7 +462,7 @@ img {
 
 @keyframes fade {
   from {
-        opacity: .4
+        opacity: .5
   }
   to {
         opacity: 1
