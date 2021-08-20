@@ -466,13 +466,12 @@ footer {
 
 #logo {
         float: right;
-        margin-top: 8px;
-        margin-bottom: 8px;
-        
+        margin-top: 24px;
 }
 
 .top {
         display: flexbox;
+        margin-bottom: 16px;
 }
 
 .languagebar {
