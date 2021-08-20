@@ -604,10 +604,13 @@ img {
   }
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 768px) {
         .prev,
         .next,
         .text {
-        font-size: 11px
+                font-size: 11px;
   }
+        .h1 {
+                font-size: 8pt;
+        }
 }
