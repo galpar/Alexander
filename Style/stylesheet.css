@@ -117,6 +117,132 @@ footer {
         background: #2d6a4f; 
 }
 
+/* hu */
+.top-level-navbar-hu {
+        list-style: none;
+        padding-left: 32px;
+        margin: 0;
+        border: 0px solid #081c15;
+}
+
+.top-level-navbar-hu > li {
+        position: relative;
+        float: left;
+        height: 50px;
+        width: 180px;
+        background: #081c15;
+        text-align: left;
+}
+
+.top-level-navbar-hu > li:hover {
+        background: #2d6a4f;
+}
+
+.top-level-navbar-hu li:hover > ul {
+        display: inline;
+}
+
+.top-level-navbar-hu a {
+        color: #fffaec;
+        text-decoration: none;
+        padding: 8px 8px;
+        display: block;
+        line-height: 30px;
+}
+
+.second-level-navbar-hu {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 180px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: none;
+        border: 0px solid #fffaec;
+        border-radius: 2px;
+        box-shadow: 2px 4px 16px 2px #081c15;
+        font-size: 12pt;
+}
+    
+.second-level-navbar-hu > li {
+        position: relative;
+        height: 50px;
+        background: #081c15;
+}
+.second-level-navbar-hu > li:hover { 
+        background: #2d6a4f; 
+}
+    
+.third-level-navbar-hu {
+        position: absolute;
+        top: 0px;
+        right: -300px;
+        width: 300px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: none;
+        border: 0px solid #fffaec;
+        border-radius: 2px;
+        box-shadow: 2px 4px 16px 2px #081c15;
+}
+
+.third-level-navbar-ragasztott-hu {
+        position: absolute;
+        top: 0px;
+        right: -200px;
+        width: 200px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: none;
+        border: 0px solid #fffaec;
+        border-radius: 2px;
+        box-shadow: 2px 4px 16px 2px #081c15;
+}
+
+.third-level-navbar-kategoria-hu {
+        position: absolute;
+        top: 0px;
+        right: -100px;
+        width: 100px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: none;
+        border: 0px solid #fffaec;
+        border-radius: 2px;
+        box-shadow: 2px 4px 16px 2px #081c15;
+}
+    
+.third-level-navbar-hu > li {
+        height: 50px;
+        background: #081c15;
+}
+
+.third-level-navbar-ragasztott-hu > li {
+        height: 50px;
+        background: #081c15;
+}
+
+.third-level-navbar-kategoria-hu > li {
+        height: 50px;
+        background: #081c15;
+}
+    
+.third-level-navbar-hu > li:hover { 
+        background: #2d6a4f; 
+}
+
+.third-level-navbar-ragasztott-hu > li:hover { 
+        background: #2d6a4f; 
+}
+
+.third-level-navbar-kategoria-hu > li:hover { 
+        background: #2d6a4f; 
+}
+/* hu */
 
 .navigationbar {
         clear: right;
@@ -310,7 +436,7 @@ footer {
 
 .column2 {
         flex: auto;
-        padding-top: 8px;
+        padding-top: 16px;
         border: 0px solid #081c15;
         border-radius: 5px;
 }
@@ -343,6 +469,16 @@ footer {
         margin-top: 8px;
         margin-bottom: 8px;
         
+}
+
+.top {
+        display: flexbox;
+}
+
+.languagebar {
+        float: left;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 8pt;
 }
 
 h1 {
