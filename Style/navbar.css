@@ -90,7 +90,8 @@
   #toggle-menu .drop-icon, 
   #menu li label.drop-icon {
     position: absolute;
-    right: auto;
+    /* right: 3em; */
+    left: auto;
     top: 1.25em;
   }
   
