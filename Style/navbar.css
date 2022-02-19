@@ -108,7 +108,7 @@
     line-height: 1;
   }
   
-  @media only screen and (max-width: 50em) and (min-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) and (min-width: 37.5em) {
     #menu li {
       width: 33.333%;
     }
